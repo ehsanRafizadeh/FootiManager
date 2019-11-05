@@ -33,7 +33,7 @@ app.get('/getreport', function(req,res){
 	var query = req.query.q;
 
 	if(!report){
-		report = "sales";
+		report = "players";
 	}	
 	model.GetReport(report, query).then(function(docs){
 		res.send(docs);

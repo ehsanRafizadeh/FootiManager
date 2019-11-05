@@ -2,8 +2,12 @@ var DataAccess = function () {
 	this.MongoClient = require('mongodb').MongoClient
 		, assert = require('assert');
 	this.Mongo = require('mongodb');
-	this.DBConnectionString = 'mongodb://127.0.0.1:27017/db';	
+	this.DBConnectionString = 'mongodb+srv://dbAdmin:54gAYnnpsKvgnWJf@cluster0-dlh07.gcp.mongodb.net/test?retryWrites=true&w=majority';	
 };
+
+//mongodb+srv://dbAdmin:jOjvBGirX3vcU9zF@cluster0-dlh07.gcp.mongodb.net/test?retryWrites=true&w=majority
+//mongodb+srv://dbAdmin:<password>@cluster0-dlh07.gcp.mongodb.net/test?retryWrites=true&w=majority
+//this.DBConnectionString = 'mongodb://127.0.0.1:27017/db';	
 
 DataAccess.prototype.GetEntities = function(dbName, collectonName, query){
 	
