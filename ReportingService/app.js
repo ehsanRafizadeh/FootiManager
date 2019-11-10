@@ -32,6 +32,7 @@ app.get('/getreport', function(req,res){
 	var report = req.query.report;
 	var query = req.query.q;
 
+	
 	if(!report){
 		report = "players";
 	}	
